@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container-stretch {
+        display: flex;
+        height: 300px;
+        align-items: stretch;
+        background-color: aqua;
+    }
+
+    .flex-container-flex-start {
+        display: flex;
+        height: 300px;
+        align-items: flex-start;
+        background-color: aqua;
+    }
+
+    .flex-container-flex-end {
+        display: flex;
+        height: 300px;
+        align-items: flex-end;
+        background-color: aqua;
+    }
+
+    .flex-container-center {
+        display: flex;
+        height: 300px;
+        align-items: center;
+        background-color: aqua;
+    }
+
+    .flex-container-baseline {
+        display: flex;
+        height: 300px;
+        align-items: baseline;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <!-- stretch : 아이템을 수직축 방향으로 늘려줌 -->
+    <!-- 기본 값 -->
+    <div class="flex-container-stretch">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 아이템을 수직축 상단으로 -->
+    <div class="flex-container-flex-start">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-end : 아이템을 수직축 하단으로 -->
+    <div class="flex-container-flex-end">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- center : 아이템을 수직축 중앙으로 -->
+    <div class="flex-container-center">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- baseline : 텍스트 베이스라인 기준으로 -->
+    <div class="flex-container-baseline">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+</body>
+
+</html>

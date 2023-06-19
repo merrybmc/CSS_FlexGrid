@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container-nowrap {
+        display: flex;
+    }
+
+    .flex-container-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+
+<body>
+    <!-- flex-wrap : nowrap -->
+    <!-- 기본 값은 nowrap, 컨텐츠가 넘치면 바깥으로 삐져나감 -->
+    <div class="flex-container-nowrap">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-wrap : wrap -->
+    <!-- 컨텐츠가 넘치면 다음 줄로 이동 -->
+    <div class="flex-container-wrap">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container-stretch {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-flex-start {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-flex-end {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-center {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-space-between {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-space-around {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 300px;
+        background: aqua;
+    }
+
+    .flex-container-space-evenly {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        height: 300px;
+        background: aqua;
+    }
+</style>
+
+<body>
+    <!-- 여러 행 정렬 align-content -->
+
+    <!-- stretch : 기본 값, 수직축으로 늘어남 -->
+    <div class="flex-container-stretch">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 상단으로 정렬 -->
+    <div class="flex-container-flex-start">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 하단으로 정렬 -->
+    <div class="flex-container-flex-end">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 중앙으로 정렬 -->
+    <div class="flex-container-center">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 양 끝을 기준으로 균일하게 정렬  -->
+    <div class="flex-container-space-between">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 기준으로 각 아이템의 둘레를 균일하게 정렬 -->
+    <div class="flex-container-space-around">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <br />
+
+    <!-- flex-start : 행을 모두 수직축 기준으로 각 아이템의 여백를 균일하게 정렬 -->
+    <div class="flex-container-space-evenly">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+</body>
+
+</html>

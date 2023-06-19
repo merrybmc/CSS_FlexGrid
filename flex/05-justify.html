@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container-flex-start {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .flex-container-flex-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .flex-container-flex-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-container-flex-space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container-flex-space-around {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex-container-flex-space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <!-- flex-start : 시작점부터 정렬 -->
+    <div class="flex-container-flex-start">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-end : 역방향으로부터 정렬 -->
+    <div class="flex-container-flex-end">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-center : 가운데 정렬 -->
+    <div class="flex-container-flex-center">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-space-between : 공간 양 끝을 기준으로 균일하게 정렬 -->
+    <div class="flex-container-flex-space-between">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-space-around : 각 아이템의 둘레를 균일하게 정렬  -->
+    <div class="flex-container-flex-space-around">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+
+    <br />
+
+    <!-- flex-space-evenly : 아이템 사이의 모든 여백이 동일하게 정렬 -->
+    <!-- MS 브라우저에서는 미지원 -->
+    <div class="flex-container-flex-space-evenly">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+
+</html>

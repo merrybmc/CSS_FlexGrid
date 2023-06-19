@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-item-auto {
+        flex-basis: auto;
+        border: 1px solid black;
+    }
+
+    .flex-item-0 {
+        flex-basis: 0;
+        border: 1px solid black;
+    }
+
+    .flex-item-50per {
+        flex-basis: 50%;
+        border: 1px solid black;
+    }
+
+    .flex-item-300px {
+        flex-basis: 300px;
+        border: 1px solid black;
+    }
+
+    .flex-item-10rem {
+        flex-basis: 10rem;
+        border: 1px solid black;
+    }
+
+    .flex-item-content {
+        flex-basis: content;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <!-- flex-basic
+        Flex 아이템의 기본 크기를 설정
+        flex-direction이 row일 때는 너비 크기
+        flex-directon이 column일 때는 높이 크기 -->
+    <div class="flex-container">
+        <div class="flex-item-auto">AAAAA</div>
+        <div class="flex-item-0">BBBBB</div>
+        <div class="flex-item-50per">CCCCC</div>
+        <div class="flex-item-300px">CCCCC</div>
+        <div class="flex-item-10rem">CCCCC</div>
+        <div class="flex-item-content">CCCCC</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!-- 
+    Flex 레이아웃을 만들기 위한 기본적인 HTML 구조
+    
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container {
+        display: flex;
+    }
+
+    .inline-flex-container {
+        display: flex;
+    }
+</style>
+
+<body>
+    <!-- Flex 레이아웃 HTML 기본 구조 -->
+    <!-- block element로 동작, width를 전체 차지 -->
+    <!-- 플렉스 부모 Container -->
+    <div class="flex-container">
+        <!-- 플렉스 자식 Item -->
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+    Lorem ipsum dolor, sit amet consectetur
+
+    <!-- inline-Flex 레이아웃 HTML 기본 구조 -->
+    <!-- width를 정해진 만큼만 차지 -->
+    <div class="inline-flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+    Lorem ipsum dolor, sit amet consectetur
+</body>
+
+</html>

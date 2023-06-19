@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-item:nth-child(1) {
+        flex-shrink: 0;
+        width: 100px;
+    }
+
+    .flex-item:nth-child(2) {
+        flex-grow: 1;
+    }
+
+    .flex-item:nth-child(3) {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <!-- flex-shrink 
+        flex-shrink를 0으로 세팅하면 아이템의 크기가 flex-basis보다 작아지지 않기 때문에 고정폭의 column을 쉽게 만들 수 있다.
+        flex-shrink: 0으로 설정된 div는 창의 크기가 커지거나 줄어드나 값이 고정-->
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+
+</html>

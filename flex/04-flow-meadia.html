@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container-flex-flow {
+        display: flex;
+        flex-flow: row wrap
+    }
+
+    @media (min-width:600px) {
+        .flex-container-medeaquery {
+            display: flex;
+        }
+
+        .flex-item {
+            flex: 1
+        }
+    }
+</style>
+
+<body>
+    <!-- flex-flow - row wrap -->
+    <!-- direction, wrap 축약형 -->
+    <div class="flex-container-flex-flow">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+
+    <!-- 반응형 미디어쿼리 -->
+    <div class="flex-container-medeaquery">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+
+</html>

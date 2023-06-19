@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    .flex-container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .flex-item:nth-child(2) {
+        align-self: flex-start;
+    }
+
+    .flex-item:nth-child(3) {
+        align-self: flex-end;
+    }
+</style>
+
+<body>
+    <!-- align-items는 전체이지만
+    align-self를 통해 개별 속성 적용 가능
+    align-self는 align-items보다 우선권이 있음 -->
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAA</div>
+        <div class="flex-item">BBBBB</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+
+</html>
