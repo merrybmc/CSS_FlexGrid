@@ -14,31 +14,28 @@
         display: flex;
     }
 
-    .flex-item:nth-child(1) {
-        flex: 1
-            /* flex 1 1 0 */
+    .flex-item {
+        flex-grow: 1;
+    }
+
+    /* .flex-item:nth-child(1) {
+        flex-grow: 1;
     }
 
     .flex-item:nth-child(2) {
-        flex: 3
-            /* flex 3 1 0 */
+        flex-grow: 2;
     }
 
     .flex-item:nth-child(3) {
-        flex: 1
-            /* flex 1 1 0 */
-    }
+        flex-grow: 1;
+    } */
 </style>
 
 <body>
-    <!-- flex 축약 속성 
-        flex: 1 1 500px
-        = flex-grow:1; flex-shrink:1; flex-basis:500px
-         -->
     <div class="flex-container">
-        <div class="flex-item">AAAAAAAAA</div>
-        <div class="flex-item">BBBBB</div>
-        <div class="flex-item">C</div>
+        <div class="flex-item">AAAAAAAAAAAAAAA</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">CCCCCC</div>
     </div>
 </body>
 

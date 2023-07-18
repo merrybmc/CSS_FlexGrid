@@ -13,12 +13,13 @@
     .page {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .content {
         flex: 1 auto;
-
+        /* grow = 1, shrink = 1, basis = auto */
+        padding: 1.5rem;
     }
 </style>
 
@@ -26,11 +27,10 @@
     <div class="page">
         <header class="header flex-item">header</header>
         <section class="content">
-            abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis blanditiis, quia voluptate hic provident perspiciatis sapiente deleniti id laborum architecto inventore labore facilis
+            esse. Placeat atque modi iusto ipsa eum.
         </section>
-        <footer class="footer flex-item">
-            footer
-        </footer>
+        <footer class="footer flex-item">footer</footer>
     </div>
 </body>
 

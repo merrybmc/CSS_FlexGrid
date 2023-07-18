@@ -16,7 +16,7 @@
 
     .flex-item:nth-child(1) {
         flex-shrink: 0;
-        width: 100px;
+        width: 150px;
     }
 
     .flex-item:nth-child(2) {
@@ -24,18 +24,16 @@
     }
 
     .flex-item:nth-child(3) {
-        flex-grow: 1;
+        flex-shrink: 0;
+        width: 200px;
     }
 </style>
 
 <body>
-    <!-- flex-shrink 
-        flex-shrink를 0으로 세팅하면 아이템의 크기가 flex-basis보다 작아지지 않기 때문에 고정폭의 column을 쉽게 만들 수 있다.
-        flex-shrink: 0으로 설정된 div는 창의 크기가 커지거나 줄어드나 값이 고정-->
     <div class="flex-container">
-        <div class="flex-item">AAAAAAAAA</div>
-        <div class="flex-item">BBBBB</div>
-        <div class="flex-item">C</div>
+        <div class="flex-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, voluptatibus.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem veritatis natus autem. Sapiente minima ipsa nesciunt rem reiciendis voluptate</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, at!</div>
     </div>
 </body>
 

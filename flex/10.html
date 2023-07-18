@@ -12,16 +12,20 @@
 <style>
     .flex-container {
         display: flex;
+        width: 300px;
     }
 
-    .flex-item {}
+    .flex-item:nth-child(1) {
+        flex-shrink: 1;
+        width: 200px;
+    }
 </style>
 
 <body>
     <div class="flex-container">
-        <div class="flex-item">AAAAAAAAAAAAAAA</div>
-        <div class="flex-item">B</div>
-        <div class="flex-item">CCCCCC</div>
+        <div class="flex-item">AAA</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum soluta similique recusandae dolor ut, dolores placeat magni quod, obcaecati eligendi eveniet quo quas
+            tempora inventore quos dolorum hic suscipit quam?</div>
     </div>
 </body>
 

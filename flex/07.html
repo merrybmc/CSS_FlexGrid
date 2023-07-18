@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    /* 여러 행 정렬 */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: stretch; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        align-content: space-between;
+        /* align-content: space-around; */
+        /* align-content: space-evenly; */
+        /* width: 700px; */
+        height: 300px;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laborum rem accusantium cum in. Nemo libero, omnis, modi illum ad quibusdam sunt a nisi at beatae
+            perspiciatis? Dicta, nobis. Et!</div>
+        <div class="flex-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, eos architecto doloremque tempora pariatur qui quos impedit cumque dolore ipsam incidunt corrupti, sunt
+            doloribus, vero voluptas</div>
+        <div class="flex-item">Lorem, ipsum dolor.</div>
+    </div>
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident ad qui nam, maxime assumenda ullam deserunt error sit harum atque voluptatem cupiditate est animi -->
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<style>
+    /* 실습
+    */
+    .felx-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width:600px) {
+        .flex-container {
+            /* display: flex; */
+            flex-direction: row;
+        }
+
+        .flex-item {
+            flex: 1;
+        }
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vero porro! Nulla, omnis cum. Ipsum nam dolorum ea ad blanditiis qui eum, accusamus, recusandae at
+            aliquid earum reiciendis repellat optio!</div>
+        <div class="flex-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</div>
+        <div class="flex-item">Lorem ipsum</div>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident ad qui nam, maxime assumenda ullam deserunt error sit harum atque voluptatem cupiditate est animi
+</body>
+
+</html>

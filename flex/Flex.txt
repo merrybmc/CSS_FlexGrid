@@ -1,4 +1,0 @@
-Flex는 Flexible Box, Flexbox 라고 부르기도 한다.
-Flex는 레이아우 배치 전용 기능으로 고안됨.
-레이아웃을 만들 때 딱히 사용할게 없어서 쓰던 float나 inline-block 등을
-이용한 기존 방식보다 훨씬 강력하고 편리하다.
