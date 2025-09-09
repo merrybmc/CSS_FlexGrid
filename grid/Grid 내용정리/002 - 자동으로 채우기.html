@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* minmax() 최소값과 최대값을 설정, 인자 2개 */
+        grid-template-rows: repeat(3, minmax(100px, auto));
+
+        /* autofill, autofit 컬럼의 개수를 미리 내가 정해주지 않고, 자동으로 채워줌
+        100%를 채우기 위해 20% 컬럼 5개, 만약 25%일 경우 4개, 30%일 경우 3개가 생기고 다음 줄로 넘어감    */
+        grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+        /* 창 최대 사이즈에 맞게 200px만큼 채워줌 */
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+
+        /* 창 최대 사이즈가 1000px이고 그리드 셀이 3개밖에 없을 때 200px이 아닌 창 최대 사이즈에 맞게 크기를 자동으로 채워줌 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      }
+
+      .grid-item {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="grid-item">B</div>
+      <div class="grid-item">C</div>
+      <div class="grid-item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae earum aliquam voluptatibus fugiat eius accusamus quasi minus, nihil,
+        impedit id necessitatibus nisi quaerat ullam. Quibusdam iure pariatur quas. Aperiam, voluptate!
+      </div>
+      <div class="grid-item">E</div>
+      <div class="grid-item">F</div>
+      <div class="grid-item">G</div>
+      <div class="grid-item">H</div>
+      <div class="grid-item">I</div>
+    </div>
+  </body>
+</html>
