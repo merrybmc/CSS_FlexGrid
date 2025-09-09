@@ -1,5 +1,5 @@
 html {
-  font-family: 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+  font-family: "Apple SD Gothic Neo", Roboto, "Noto Sans KR", NanumGothic, "Malgun Gothic", sans-serif;
   color: #555;
   line-height: 1.2;
   word-wrap: break-word;
@@ -157,5 +157,4 @@ button {
   border: 3px solid rgb(50, 50, 40);
   color: white;
   background: #ff6937;
-  /* background-color: cadetblue; */
 }
