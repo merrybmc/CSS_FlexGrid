@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 1rem;
+      }
+
+      .grid-item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+
+      .grid-item:nth-child(3) {
+        grid-column: 3;
+        grid-row: 2;
+      }
+
+      .grid-item:nth-child(4) {
+        grid-column: 3;
+        /* grid line을 3번부터 5번까지 차지 */
+        /* grid-row: 3/5; */
+
+        /* grid line을 3번부터 다음 3번째 line까지 차지 */
+        /* grid-row: 3 / span 3; */
+
+        grid-row: 2 / span 3;
+
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">A</div>
+      <div class="grid-item">B</div>
+      <div class="grid-item">C</div>
+      <div class="grid-item">D</div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptates? Eaque tempora inventore beatae, illum quidem
+        impedit itaque ex cumque, omnis, exercitationem recusandae officia amet accusamus saepe autem alias eius!
+      </div>
+      <div class="grid-item">F</div>
+      <div class="grid-item">G</div>
+      <div class="grid-item">H</div>
+      <div class="grid-item">I</div>
+    </div>
+  </body>
+</html>
